@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f0f0f;
+    --foreground: #ededed;
+  }
+}
+
+.heading {
+  font-family: 'Melodrama-Regular', serif;
+  letter-spacing: -0.02em;
+}
+
+.subheading {
+  font-family: 'Melodrama-Medium', serif;
+}
+
+.brand-mark {
+  font-family: 'Melodrama-Medium', serif;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.brand-owner-mark {
+  font-family: 'Melodrama-Regular', serif;
+  font-size: 50px;
+  letter-spacing: -0.03em;
+}
+
+@font-face {
+  font-family: 'Melodrama-Regular';
+  src: url('/fonts/melodrama/Melodrama-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Melodrama-Medium';
+  src: url('/fonts/melodrama/Melodrama-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Melodrama-Semibold';
+  src: url('/fonts/melodrama/Melodrama-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Melodrama-Bold';
+  src: url('/fonts/melodrama/Melodrama-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url('/fonts/manrope/Manrope-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Medium';
+  src: url('/fonts/manrope/Manrope-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Semibold';
+  src: url('/fonts/manrope/Manrope-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url('/fonts/manrope/Manrope-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Manrope-Regular', serif;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior: none;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+
+/*labels and meta texts*/
+.text-small {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.text-body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.text-nav {
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.text-section {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.text-heading {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
