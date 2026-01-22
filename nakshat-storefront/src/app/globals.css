@@ -22,6 +22,12 @@
   letter-spacing: -0.02em;
 }
 
+.teaser-heading {
+  font-family: 'Melodrama-Regular', serif;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
 .subheading {
   font-family: 'Melodrama-Medium', serif;
 }

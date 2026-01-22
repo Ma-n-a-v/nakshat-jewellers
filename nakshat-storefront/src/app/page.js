@@ -1,4 +1,5 @@
 import Hero from '@/components/sections/Hero'
+import AboutTeaser from '@/components/sections/AboutTeaser' 
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       {/* content below so scrolling exists */}
       <section className="relative z-30 min-h-[120vh] bg-[#0f0f0f]">
         {/** content goes here (other components of the home page) */}
-        <div className="p-10 text-white">NEXT SECTION</div>
+        <AboutTeaser />
       </section>
     </main>
   )
